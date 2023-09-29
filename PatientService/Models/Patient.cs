@@ -7,18 +7,7 @@
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public string Gender { get; set; } = string.Empty;
-        public DateOnly BirthDate { get; set; }
+        public DateTime BirthDate { get; set; }//Change format to only date
         public bool ProfileIsActive { get; set; }
-
-        public Patient(int id, string firstName, string lastName, string gender, DateOnly birthDate, bool profileIsActive)
-        {
-            Id = id;
-            FirstName = firstName;
-            LastName = lastName;
-            Gender = gender;
-            BirthDate = birthDate;
-            ProfileIsActive = profileIsActive;
-        }
-
     }
 }
